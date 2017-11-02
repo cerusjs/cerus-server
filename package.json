@@ -1,17 +1,17 @@
 {
-	"name": "cerus-promise",
+	"name": "cerus-server",
 	"version": "0.0.1",
-	"description": "The promise module for CerusJS",
+	"description": "The server module for CerusJS",
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cerusjs/cerus-promise.git"
+		"url": "git+https://github.com/cerusjs/cerus-server.git"
 	},
 	"author": "cerusjs",
 	"bugs": {
-		"url": "https://github.com/cerusjs/cerus-promise/issues"
+		"url": "https://github.com/cerusjs/cerus-server/issues"
 	},
 	"scripts": {},
-	"homepage": "https://github.com/cerusjs/cerus-promise",
+	"homepage": "https://github.com/cerusjs/cerus-server",
 	"dependencies": {} 
 }
