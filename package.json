@@ -1,6 +1,6 @@
 {
 	"name": "cerus-server",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "The server module for CerusJS",
 	"main": "index.js",
 	"repository": {
@@ -13,5 +13,5 @@
 	},
 	"scripts": {},
 	"homepage": "https://github.com/cerusjs/cerus-server",
-	"dependencies": {} 
+	"dependencies": {}
 }
