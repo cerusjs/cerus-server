@@ -1,6 +1,6 @@
 {
 	"name": "cerus-server",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "The server module for CerusJS",
 	"main": "index.js",
 	"repository": {
@@ -11,7 +11,15 @@
 	"bugs": {
 		"url": "https://github.com/cerusjs/cerus-server/issues"
 	},
-	"scripts": {},
+	"scripts": {
+		"test": "./node_modules/.bin/mocha tests --reporter spec"
+	},
 	"homepage": "https://github.com/cerusjs/cerus-server",
-	"dependencies": {}
+	"dependencies": {},
+	"devDependencies": {
+		"cerus": "0.0.13",
+		"cerus-request": "0.0.2",
+		"chai": "^4.1.2",
+		"mocha": "^4.0.1"
+	}
 }
