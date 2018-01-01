@@ -158,16 +158,6 @@ describe("server", function() {
 		});
 	});
 
-	describe("#server", function() {
-		context("with no parameters", function() {
-			it("should return an object", function() {
-				server.init_(cerus);
-				var server_ = server.server().server();
-				expect(server_).to.be.a("object");
-			});
-		});
-	});
-
 	describe("#listening", function() {
 		context("with no running server and no parameters", function() {
 			it("should return false", function() {
