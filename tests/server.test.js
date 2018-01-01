@@ -113,15 +113,13 @@ describe("server", function() {
 		context("with a server running and a function as parameter", function() {
 			it("should be called", function(done) {
 				server.init_(cerus);
+				server.server().callback(function(req, res) {
+					res.end();
+					done();
+				});
 				server.server().start()
 				.then(function() {
-					server.server().callback(function(req, res) {
-						res.end();
-						done();
-					});
-
 					cerus.request()
-					.port(cerus.settings().port())
 					.send(function() {
 						server.server().stop();
 					});
