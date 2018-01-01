@@ -1,22 +1,24 @@
 module.exports = function() {
+	var plugin = {};
+
 	var package = require("./package.json");
 	var server;
 	
-	this.name = package["name"];
-	this.version = package["version"];
-	this.dependencies = [
+	plugin.name = package["name"];
+	plugin.version = package["version"];
+	plugin.dependencies = [
 		"cerus",
 		"cerus-promise",
 		"cerus-settings"
 	];
 
-	this.init_ = function(cerus) {
-		server = require("./lib/server")(cerus);
+	plugin.init_ = function(cerus) {
+		server = new (require("./lib/server"))(cerus);
 	}
 
-	this.server = function() {
+	plugin.server = function() {
 		return server;
 	}
 
-	return this;
+	return plugin;
 }
