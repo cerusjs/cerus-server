@@ -1,25 +1,22 @@
 module.exports = function() {
-	var self = {};
-
 	var package = require("./package.json");
+	var server;
 	
-	self.name = package["name"];
-	self.version = package["version"];
-	self.dependencies = [
+	this.name = package["name"];
+	this.version = package["version"];
+	this.dependencies = [
 		"cerus",
 		"cerus-promise",
 		"cerus-settings"
 	];
 
-	var server;
-
-	self.init_ = function(cerus) {
+	this.init_ = function(cerus) {
 		server = require("./lib/server")(cerus);
 	}
 
-	self.server = function() {
+	this.server = function() {
 		return server;
 	}
 
-	return self;
+	return this;
 }
