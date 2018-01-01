@@ -18,7 +18,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"cerus": "0.0.13",
-		"cerus-request": "^0.1.0",
+		"cerus-request": "^0.1.1",
 		"chai": "^4.1.2",
 		"mocha": "^4.0.1"
 	}
