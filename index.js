@@ -10,7 +10,7 @@ module.exports = function() {
 		"cerus-promise"
 	];
 
-	plugin.init_ = function(cerus) {
+	plugin._init = function(cerus) {
 		server = new (require("./lib/server"))(cerus);
 	}
 
