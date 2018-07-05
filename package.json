@@ -1,6 +1,6 @@
 {
 	"name": "cerus-server",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "The server module for CerusJS",
 	"main": "index.js",
 	"repository": {
